@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -5,118 +7,185 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: hsl(210, 46%, 95%);
 }
 
 .main {
   padding: 5rem 0;
-  flex: 1;
+  display: grid;
+  grid-template-columns: 290px 300px 300px 310px;
+  grid-template-areas: "card1 card1 card2 card3"
+                       "card4 card5 card5 card3";
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.details {
+  width: auto;
+  font-family: 'Barlow Semi Condensed',
+  sans-serif;
+  padding-left: 15px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
+.name {
+  font-size: 16px;
+}
+
+.verif {
+  font-size: 14px;
+  padding-top: 3px;
+  opacity: 50%;
+}
+
+.nameImage {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  height: fit-content;
 }
 
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
+.quoteContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: 'Barlow Semi Condensed',
+  sans-serif;
+  height: 100%;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.titleQuote {
+  font-size: 23px;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.subQuote {
+  opacity: 70%;
+  font-size: 16px;
+  width: 103%;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.itemA {
+  grid-area: card1;
+  width: auto;
+  height: 330px;
+  background-color: hsl(263, 55%, 52%);
+  border-radius: 12px;
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  z-index: 1;
 }
 
-.title,
-.description {
-  text-align: center;
+.quoteIcon {
+  background-image: url('../images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-size: 120px;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 410px;
+  z-index: -1;
 }
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+.danielAvatar {
+  background-image: url('../images/image-daniel.jpg');
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid hsl(264, 80%, 70%);
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.itemB {
+  grid-area: card2;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+  width: 300px;
+  height: 330px;
 }
 
-.grid {
+.jonathanAvatar {
+  background-image: url('../images/image-jonathan.jpg');
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid hsl(217, 19%, 35%);
+}
+
+.itemC {
+  grid-area: card3;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+  width: auto;
+  height: 660px;
+  color: hsl(217, 19%, 35%);
+  box-shadow: 23px 41px 55px -24px rgba(0, 0, 0, 0.17);
+}
+
+.kiraAvatar {
+  background-image: url('../images/image-kira.jpg');
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 100%);
+}
+
+.itemD {
+  grid-area: card4;
+  width: 290px;
+  height: 300px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+  border-radius: 12px;
+  box-shadow: 23px 41px 55px -24px rgba(0, 0, 0, 0.17);
+}
+
+.jeanetteAvatar {
+  background-image: url('../images/image-jeanette.jpg');
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 100%);
+}
+
+.itemE {
+  grid-area: card5;
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+  width: auto;
+  height: 300px;
+}
+
+.patrickAvatar {
+  background-image: url('../images/image-patrick.jpg');
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid hsl(263, 55%, 52%);
+}
+
+.cardContent {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+  justify-content: left;
+  flex-direction: column;
+  height: inherit;
+  width: inherit;
+  padding: 30px 35px;
 }
