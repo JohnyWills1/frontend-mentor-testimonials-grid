@@ -6,7 +6,7 @@ export default function Home() {
 		<div className={styles.container}>
 			<Head>
 				<title>Testimonials Grid</title>
-				<link rel='icon' href='/favicon.ico' />
+				<link rel='icon' href='/favicon-32x32.png' />
 			</Head>
 
 			<main className={styles.main}>
